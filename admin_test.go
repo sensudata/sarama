@@ -915,7 +915,7 @@ func TestListConsumerGroupOffsets(t *testing.T) {
 	}
 
 	response, err := admin.ListConsumerGroupOffsets(group, map[string][]int32{
-		topic: []int32{0},
+		topic: {0},
 	})
 	if err != nil {
 		t.Fatalf("ListConsumerGroupOffsets failed with error %v", err)

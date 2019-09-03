@@ -23,7 +23,7 @@ before_install:
 - vagrant/create_topics.sh
 - vagrant/run_java_producer.sh
 
-install: make install_dependencies
+install: make get
 
 script:
 - make test
