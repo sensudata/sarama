@@ -1,5 +1,3 @@
-// +build cgo
-
 package sarama
 
 import "github.com/klauspost/compress/zstd"
