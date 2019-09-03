@@ -27,8 +27,6 @@ install: make get
 
 script:
 - make test
-- make vet
-- make errcheck
 - if [[ "$TRAVIS_GO_VERSION" == 1.12* ]]; then make fmt; fi
 
 after_success:
