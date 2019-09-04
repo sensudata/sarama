@@ -67,8 +67,6 @@ func compress(cc CompressionCodec, level int, data []byte) ([]byte, error) {
 			return nil, err
 		}
 		return buf.Bytes(), nil
-	case CompressionZSTD:
-		return zstdCompressLevel(nil, data, level)
 	default:
 		return nil, PacketEncodingError{fmt.Sprintf("unsupported compression codec (%d)", cc)}
 	}
