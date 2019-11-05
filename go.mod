@@ -1,4 +1,4 @@
-module github.com/Shopify/sarama
+module github.com/influxdata/sarama
 
 require (
 	github.com/Shopify/toxiproxy v2.1.4+incompatible
